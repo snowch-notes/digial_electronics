@@ -125,8 +125,6 @@ When **Clock = 0**: D latch "holds" - output maintains previous state
 ```mermaid
 %%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#ff0000'}}}%%
 gitGraph
-    options:
-        theme: base
     commit id: "CLK Low"
     commit id: "Data=0"
     commit id: "Data=1" 
