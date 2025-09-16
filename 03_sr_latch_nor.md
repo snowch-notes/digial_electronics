@@ -133,19 +133,12 @@ graph TD
 ### Components Required
 
 | Component | Quantity | Source | Part Number | Price |
-
 |-----------|----------|--------|-------------|-------|
-
 | 74HC02 (Quad NOR) | 1 | Rapid Electronics | SN74HC02N | £0.27 |
-
 | Push Buttons | 2 | ELEGOO Kit | Tactile switches | Included |
-
 | LEDs (Green/Red) | 2 | ELEGOO Kit | 5mm LEDs | Included |
-
 | 220Ω Resistors | 2 | ELEGOO Kit | Current limiting | Included |
-
 | 10kΩ Resistors | 2 | ELEGOO Kit | Pull-down | Included |
-
 | Breadboard | 1 | ELEGOO Kit | 830-point | Included |
 
 **Total additional cost: £0.27**
@@ -155,15 +148,10 @@ graph TD
 ### Normal Operation
 
 | Set (S) | Reset (R) | Q (LED1) | Q̄ (LED2) | State | Action |
-
 |---------|-----------|----------|-----------|-------|--------|
-
 | 0 | 0 | Previous | Previous | **Hold** | Memory maintained |
-
 | 1 | 0 | 1 | 0 | **Set** | Store logic 1 |
-
 | 0 | 1 | 0 | 1 | **Reset** | Store logic 0 |
-
 | **1** | **1** | **0** | **0** | **⚠️ Invalid** | **Forbidden state** |
 
 ## Invalid State Demonstration
@@ -379,21 +367,13 @@ graph TD
 ## Comparison: NAND vs NOR SR Latches
 
 | Aspect | NAND SR Latch | NOR SR Latch |
-
 |--------|---------------|--------------|
-
 | **Active Level** | LOW (button press = 0) | HIGH (button press = 1) |
-
 | **Normal Inputs** | S=1, R=1 (both HIGH) | S=0, R=0 (both LOW) |
-
 | **Set Command** | S=0, R=1 | S=1, R=0 |
-
 | **Reset Command** | S=1, R=0 | S=0, R=1 |
-
 | **Invalid State** | S=0, R=0 (both LOW) | S=1, R=1 (both HIGH) |
-
 | **Invalid Output** | Q=1, Q̄=1 (both HIGH) | Q=0, Q̄=0 (both LOW) |
-
 | **Intuitive?** | Less (inverted logic) | More (direct logic) |
 
 ## Why This Matters
