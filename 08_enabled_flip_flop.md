@@ -302,8 +302,6 @@ Hold time: Enable stable after clock rising edge
 ```mermaid
 %%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#ff0000'}}}%%
 gitGraph
-    options:
-        theme: base
     commit id: "CLK Low"
     commit id: "Enable=0"
     commit id: "CLK High (ignored)"
