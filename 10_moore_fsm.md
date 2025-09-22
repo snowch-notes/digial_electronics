@@ -134,29 +134,29 @@ graph TD
 stateDiagram-v2
     [*] --> RED
     
-    state RED {
-        RED : Red Light ON
-        RED : Green/Yellow OFF
-        RED : Timer 30 seconds
-    }
+    RED : Red Light ON
+    note right of RED
+        Green/Yellow OFF
+        Timer 30s
+    end note
     
-    state REDYELLOW {
-        REDYELLOW : Red + Yellow
-        REDYELLOW : Green OFF
-        REDYELLOW : Timer 5 seconds
-    }
+    REDYELLOW : Red + Yellow
+    note right of REDYELLOW
+        Green OFF
+        Timer 5s
+    end note
     
-    state GREEN {
-        GREEN : Green Light ON
-        GREEN : Red/Yellow OFF
-        GREEN : Timer 25 seconds
-    }
+    GREEN : Green Light ON
+    note right of GREEN
+        Red/Yellow OFF
+        Timer 25s
+    end note
     
-    state YELLOW {
-        YELLOW : Yellow Light ON
-        YELLOW : Red/Green OFF
-        YELLOW : Timer 5 seconds
-    }
+    YELLOW : Yellow Light ON
+    note right of YELLOW
+        Red/Green OFF
+        Timer 5s
+    end note
     
     RED --> REDYELLOW : Timer expires
     REDYELLOW --> GREEN : Timer expires
