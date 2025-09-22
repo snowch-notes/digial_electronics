@@ -134,19 +134,19 @@ graph TD
 stateDiagram-v2
     [*] --> RED
     
-    RED : 🔴 Red Light ON
+    RED : Red Light ON
     RED : Green/Yellow OFF
     RED : Timer: 30 seconds
     
-    REDYELLOW : 🔴🟡 Red + Yellow
+    REDYELLOW : Red + Yellow
     REDYELLOW : Green OFF
     REDYELLOW : Timer: 5 seconds
     
-    GREEN : 🟢 Green Light ON
+    GREEN : Green Light ON
     GREEN : Red/Yellow OFF
     GREEN : Timer: 25 seconds
     
-    YELLOW : 🟡 Yellow Light ON
+    YELLOW : Yellow Light ON
     YELLOW : Red/Green OFF
     YELLOW : Timer: 5 seconds
     
