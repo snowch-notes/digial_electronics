@@ -148,7 +148,7 @@ stateDiagram-v2
     
     YELLOW : Yellow Light ON
     YELLOW : Red/Green OFF
-    YELLOW : Timer: 5 seconds
+    YELLOW : Timer : 5 seconds
     
     RED --> REDYELLOW : Timer expires
     REDYELLOW --> GREEN : Timer expires
